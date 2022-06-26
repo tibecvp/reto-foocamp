@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section id="card-section" class="gift-card-section">
+            <h2 class="card-title">Tarjeta de regalo</h2>
+            <div class="card-eyebrow"></div>
+            <p class="card-message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sequi rerum earum consequuntur dolores enim consectetur dolor ipsa similique autem repellat, voluptates sint ea atque nobis corrupti laboriosam, maiores natus?
+            Odio, temporibus harum quae voluptates quidem eum provident, nisi dolorem quasi, similique molestias maxime amet.</p>
+            <button id="btn-send-modal" class="primary-button card-button" >ENVIAR TARJETA</button>
+            <div id="my-modal" class="modal-container">
+                <div class="modal-content">
+                    <div class="modal-text">
+                        <h2 class="card-title">Deseas enviar la tarjeta?</h2>
+                        <div class="card-eyebrow"></div>
+                        <p>Escribe el nombre de la persona a quién deseas enviar la tarjeta</p>
+                        <input id="name" type="text" maxlength="20" placeholder="Escribe un nombre...">
+                        <span id="input-message" class="input-message">
+                            *El campo está vacío, escribe un nombre para poder enviar la tarjeta.
+                        </span>
+                    </div>
+                    <div class="modal-buttons">
+                        <button id="btn-close-modal" class="secondary-button">CANCELAR</button>
+                        <button class="primary-button" onclick="sendCard()">CONTINUAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="message-section" class="success-message-section">
+            <h1 
+            class="success-message-text">Tarjeta enviada a
+            <span id="success-message-name"></span>!
+        </h1>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
