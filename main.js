@@ -44,6 +44,6 @@ function showSuccessMessage(name) {
     var successMessageName = document.getElementById('success-message-name');
 
     cardSection.style.display = "none";
-    successMessageName.innerText = name;
+    successMessageName.innerHTML = name;
     successMessageSection.style.display = "flex";
 }
